@@ -1007,46 +1007,42 @@ footer a:hover {
 <!-- ══════════ TOP LOGO BAR (exact AgentBoard structure) ══════════ -->
 <div id="topbar">
   <div class="topbar-inner">
-    <div class="logo-group">
-      <div class="logo-circle">H</div>
-      <div class="logo-text"><span>HALT</span>Bench</div>
-    </div>
+<!--    <div class="logo-group">-->
+<!--      <div class="logo-circle">H</div>-->
+<!--      <div class="logo-text"><span>HALT</span>Bench</div>-->
+<!--    </div>-->
     <nav class="topbar-nav">
       <a class="topbar-link" href="index.html">
         <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7A1 1 0 003 11h1v6a1 1 0 001 1h4a1 1 0 001-1v-3h2v3a1 1 0 001 1h4a1 1 0 001-1v-6h1a1 1 0 00.707-1.707l-7-7z"/></svg>
         Home
       </a>
-      <a class="topbar-link active" href="#main-performance">
+      <a class="topbar-link active" href="results.html">
         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"/></svg>
         Results
       </a>
       <a class="topbar-link" href="#dimensional">
         <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"/><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"/></svg>
-        Dimensional
+        Case Studies
       </a>
-      <a class="topbar-link" href="#long-range">
-        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"/></svg>
-        Long-range
-      </a>
-      <a class="topbar-link" href="#difficulty">
-        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z"/></svg>
-        Difficulty
+	   <a class="topbar-link" href="#dimensional">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"/><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"/></svg>
+        Benchmark Creation
       </a>
     </nav>
   </div>
 </div>
 
 <!-- ══════════ STICKY SECTION NAV ══════════ -->
-<nav id="secnav">
-  <div class="secnav-inner">
-    <a class="secnav-link" href="#main-performance">Main Performance</a>
-    <a class="secnav-link" href="#dimensional">Dimensional Analysis</a>
-    <a class="secnav-link" href="#long-range">Long-range Interaction</a>
-    <a class="secnav-link" href="#difficulty">Difficulty Analysis</a>
-    <a class="secnav-link" href="#calibration">Calibration</a>
-    <a class="secnav-link" href="#bibtex">BibTeX</a>
-  </div>
-</nav>
+<!--<nav id="secnav">-->
+<!--  <div class="secnav-inner">-->
+<!--    <a class="secnav-link" href="#main-performance">Main Performance</a>-->
+<!--    <a class="secnav-link" href="#dimensional">Dimensional Analysis</a>-->
+<!--    <a class="secnav-link" href="#long-range">Long-range Interaction</a>-->
+<!--    <a class="secnav-link" href="#difficulty">Difficulty Analysis</a>-->
+<!--    <a class="secnav-link" href="#calibration">Calibration</a>-->
+<!--    <a class="secnav-link" href="#bibtex">BibTeX</a>-->
+<!--  </div>-->
+<!--</nav>-->
 
 <!-- ══════════ HERO ══════════ -->
 <!--<div id="hero">-->
@@ -1080,7 +1076,7 @@ footer a:hover {
 <div class="section" id="main-performance">
   <div class="container">
     <div class="section-head">
-      <div class="section-tag">§4 — Main Performance</div>
+      <div class="section-tag">Main Performance</div>
       <h2>Main Performance</h2>
       <p class="section-lead"><strong>Benchmark composition:</strong> We categorize instances into five workflow families: Incident Triage, Forensic Reconstruction, Tool Orchestration, Remediation Planning, and Adversarial Resistance. Four decision regimes: ACT, INV, ESC, REF — 312 instances each.</p>
       <p class="section-lead"><strong>Evaluation metrics:</strong> We introduce three primary metrics. <strong>Decision-Boundary Accuracy (DBA)</strong> measures whether the agent chooses the correct next-step policy. <strong>Escalation Correctness (EC)</strong> specifically measures correct escalation decisions — the most deployment-critical metric. <strong>EscScore</strong> is the composite metric (Eq. 1). We additionally report Unsafe Overreach Rate (UOR ↓) and Over-Deferral Rate (ODR ↓).</p>
@@ -1345,28 +1341,28 @@ footer a:hover {
   </div>
 </div>
 
-<!-- ══════════ BIBTEX ══════════ -->
-<div class="section gray" id="bibtex">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-tag">Citation</div>
-      <h2>BibTeX</h2>
-    </div>
-    <div class="bib-wrap">
-      <button class="copy-btn" onclick="copyBib()">Copy</button>
-      <pre class="bib-pre" id="bibcode">@inproceedings{halt2026,
-  title     = {{HALT}: Benchmarking When Agents Should
-               Act, Investigate, Escalate, or Refuse},
-  author    = {Anonymous Author(s)},
-  booktitle = {Advances in Neural Information Processing
-               Systems (NeurIPS)},
-  year      = {2026},
-  note      = {Evaluations \& Datasets Track},
-  url       = {https://arxiv.org/abs/2026.xxxxx},
-}</pre>
-    </div>
-  </div>
-</div>
+<!--&lt;!&ndash; ══════════ BIBTEX ══════════ &ndash;&gt;-->
+<!--<div class="section gray" id="bibtex">-->
+<!--  <div class="container">-->
+<!--    <div class="section-head">-->
+<!--      <div class="section-tag">Citation</div>-->
+<!--      <h2>BibTeX</h2>-->
+<!--    </div>-->
+<!--    <div class="bib-wrap">-->
+<!--      <button class="copy-btn" onclick="copyBib()">Copy</button>-->
+<!--      <pre class="bib-pre" id="bibcode">@inproceedings{halt2026,-->
+<!--  title     = {{HALT}: Benchmarking When Agents Should-->
+<!--               Act, Investigate, Escalate, or Refuse},-->
+<!--  author    = {Anonymous Author(s)},-->
+<!--  booktitle = {Advances in Neural Information Processing-->
+<!--               Systems (NeurIPS)},-->
+<!--  year      = {2026},-->
+<!--  note      = {Evaluations \& Datasets Track},-->
+<!--  url       = {https://arxiv.org/abs/2026.xxxxx},-->
+<!--}</pre>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 
 <!-- ══════════ WORKFLOW FAMILY ANALYSIS ══════════ -->
 <div class="section" id="workflow">
@@ -1606,60 +1602,57 @@ footer a:hover {
   </div>
 </div>
 
-<!-- ══════════ ABOUT / PAPER ══════════ -->
-<div class="section" id="about">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-tag">About</div>
-      <h2>About HALT</h2>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start">
-      <div>
-        <p>HALT is introduced in the paper <em>"HALT: Benchmarking When Agents Should Act, Investigate, Escalate, or Refuse"</em>, submitted to the NeurIPS 2026 Evaluations &amp; Datasets Track.</p>
-        <p>The benchmark targets a deployment-critical but under-measured property of LLM agents: <strong>bounded decision-making under uncertainty</strong>. By structuring tasks around latent evidence sufficiency (σ), uncertainty recoverability (ρ), and action authorization (α), HALT evaluates not just whether agents can solve tasks, but whether they can choose the correct next-step policy.</p>
-        <p>The benchmark is released openly under <strong>CC-BY 4.0</strong> with a permanent Zenodo DOI. All code, instance schemas, scoring tools, evaluation harnesses, and the full datasheet (Gebru et al. 2018) are included in the release.</p>
-        <div style="display:flex;gap:10px;margin-top:1.2rem;flex-wrap:wrap">
-          <a href="#" style="display:inline-flex;align-items:center;gap:7px;padding:9px 20px;background:var(--blue);color:#fff;border-radius:7px;font-weight:600;font-size:.88rem">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-            Paper (arXiv)
-          </a>
-          <a href="#" style="display:inline-flex;align-items:center;gap:7px;padding:9px 20px;background:var(--gray800);color:#fff;border-radius:7px;font-weight:600;font-size:.88rem">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.52 1.02 1.52 1.02.89 1.52 2.33 1.08 2.9.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.02-2.68-.1-.25-.44-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85 0 1.7.11 2.5.33 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.02 1.59 1.02 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.16.58.67.48A10.01 10.01 0 0022 12C22 6.48 17.52 2 12 2z"/></svg>
-            GitHub
-          </a>
-          <a href="#" style="display:inline-flex;align-items:center;gap:7px;padding:9px 20px;background:#16a34a;color:#fff;border-radius:7px;font-weight:600;font-size:.88rem">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.36C18 2.1 15.9 0 13.27 0c-1.4 0-2.65.6-3.55 1.56L8 4 6.28 1.56C5.38.6 4.13 0 2.73 0 .1 0-2 2.1-2 4.64c0 .48.11.92.18 1.36H-2c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h22c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg>
-            Dataset (Zenodo)
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="chart-card" style="background:var(--gray900);border-color:#1e293b">
-          <div style="font-family:var(--mono);font-size:.68rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">EscScore formula (Eq. 1)</div>
-          <div style="font-family:var(--mono);font-size:.84rem;color:#93c5fd;line-height:2.1;overflow-x:auto">
-            <span style="color:#f0abfc">EscScore</span> =<br>
-            &nbsp;&nbsp;<span style="color:#86efac">α</span> · DBA &nbsp;(<span style="color:#86efac">0.35</span>)<br>
-            + <span style="color:#86efac">β</span> · EC &nbsp;&nbsp;(<span style="color:#86efac">0.25</span>)<br>
-            + <span style="color:#86efac">γ</span> · IU &nbsp;&nbsp;(<span style="color:#86efac">0.15</span>)<br>
-            − <span style="color:#fca5a5">δ</span> · UOR (<span style="color:#fca5a5">0.15</span>)<br>
-            − <span style="color:#fca5a5">ε</span> · ODR (<span style="color:#fca5a5">0.05</span>)<br>
-            + <span style="color:#86efac">ζ</span> · (1−ECE) (<span style="color:#86efac">0.05</span>)
-          </div>
-          <div style="font-family:var(--mono);font-size:.66rem;color:#64748b;margin-top:12px;border-top:1px solid #1e293b;padding-top:8px">Rank stability: Kendall's W = 0.91 over 100 alternative weight vectors (Appendix B). Top-3 systems retain positions in 94% of rankings.</div>
-        </div>
-        <div style="margin-top:12px;padding:14px 16px;background:#f0fdf4;border:1.5px solid #bbf7d0;border-radius:8px;font-size:.84rem;color:#065f46">
-          <strong>Open science commitment:</strong> All benchmark instances, schemas, scoring code, evaluation harness, annotation guidelines, train/dev/test splits, and full Gebru et al. (2018) datasheet released under <strong>CC-BY 4.0</strong> with permanent Zenodo DOI.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<!--&lt;!&ndash; ══════════ ABOUT / PAPER ══════════ &ndash;&gt;-->
+<!--<div class="section" id="about">-->
+<!--  <div class="container">-->
+<!--    <div class="section-head">-->
+<!--      <div class="section-tag">About</div>-->
+<!--      <h2>About HALT</h2>-->
+<!--    </div>-->
+<!--    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start">-->
+<!--      <div>-->
+<!--        <p>HALT is introduced in the paper <em>"HALT: Benchmarking When Agents Should Act, Investigate, Escalate, or Refuse"</em>, submitted to the NeurIPS 2026 Evaluations &amp; Datasets Track.</p>-->
+<!--        <p>The benchmark targets a deployment-critical but under-measured property of LLM agents: <strong>bounded decision-making under uncertainty</strong>. By structuring tasks around latent evidence sufficiency (σ), uncertainty recoverability (ρ), and action authorization (α), HALT evaluates not just whether agents can solve tasks, but whether they can choose the correct next-step policy.</p>-->
+<!--        <p>The benchmark is released openly under <strong>CC-BY 4.0</strong> with a permanent Zenodo DOI. All code, instance schemas, scoring tools, evaluation harnesses, and the full datasheet (Gebru et al. 2018) are included in the release.</p>-->
+<!--        <div style="display:flex;gap:10px;margin-top:1.2rem;flex-wrap:wrap">-->
+<!--          <a href="#" style="display:inline-flex;align-items:center;gap:7px;padding:9px 20px;background:var(&#45;&#45;blue);color:#fff;border-radius:7px;font-weight:600;font-size:.88rem">-->
+<!--            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>-->
+<!--            Paper (arXiv)-->
+<!--          </a>-->
+<!--          <a href="#" style="display:inline-flex;align-items:center;gap:7px;padding:9px 20px;background:var(&#45;&#45;gray800);color:#fff;border-radius:7px;font-weight:600;font-size:.88rem">-->
+<!--            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.52 1.02 1.52 1.02.89 1.52 2.33 1.08 2.9.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.02-2.68-.1-.25-.44-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85 0 1.7.11 2.5.33 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.02 1.59 1.02 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.16.58.67.48A10.01 10.01 0 0022 12C22 6.48 17.52 2 12 2z"/></svg>-->
+<!--            GitHub-->
+<!--          </a>-->
+<!--          <a href="#" style="display:inline-flex;align-items:center;gap:7px;padding:9px 20px;background:#16a34a;color:#fff;border-radius:7px;font-weight:600;font-size:.88rem">-->
+<!--            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.36C18 2.1 15.9 0 13.27 0c-1.4 0-2.65.6-3.55 1.56L8 4 6.28 1.56C5.38.6 4.13 0 2.73 0 .1 0-2 2.1-2 4.64c0 .48.11.92.18 1.36H-2c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h22c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg>-->
+<!--            Dataset (Zenodo)-->
+<!--          </a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div>-->
+<!--        <div class="chart-card" style="background:var(&#45;&#45;gray900);border-color:#1e293b">-->
+<!--          <div style="font-family:var(&#45;&#45;mono);font-size:.68rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">EscScore formula (Eq. 1)</div>-->
+<!--          <div style="font-family:var(&#45;&#45;mono);font-size:.84rem;color:#93c5fd;line-height:2.1;overflow-x:auto">-->
+<!--            <span style="color:#f0abfc">EscScore</span> =<br>-->
+<!--            &nbsp;&nbsp;<span style="color:#86efac">α</span> · DBA &nbsp;(<span style="color:#86efac">0.35</span>)<br>-->
+<!--            + <span style="color:#86efac">β</span> · EC &nbsp;&nbsp;(<span style="color:#86efac">0.25</span>)<br>-->
+<!--            + <span style="color:#86efac">γ</span> · IU &nbsp;&nbsp;(<span style="color:#86efac">0.15</span>)<br>-->
+<!--            − <span style="color:#fca5a5">δ</span> · UOR (<span style="color:#fca5a5">0.15</span>)<br>-->
+<!--            − <span style="color:#fca5a5">ε</span> · ODR (<span style="color:#fca5a5">0.05</span>)<br>-->
+<!--            + <span style="color:#86efac">ζ</span> · (1−ECE) (<span style="color:#86efac">0.05</span>)-->
+<!--          </div>-->
+<!--          <div style="font-family:var(&#45;&#45;mono);font-size:.66rem;color:#64748b;margin-top:12px;border-top:1px solid #1e293b;padding-top:8px">Rank stability: Kendall's W = 0.91 over 100 alternative weight vectors (Appendix B). Top-3 systems retain positions in 94% of rankings.</div>-->
+<!--        </div>-->
+<!--        <div style="margin-top:12px;padding:14px 16px;background:#f0fdf4;border:1.5px solid #bbf7d0;border-radius:8px;font-size:.84rem;color:#065f46">-->
+<!--          <strong>Open science commitment:</strong> All benchmark instances, schemas, scoring code, evaluation harness, annotation guidelines, train/dev/test splits, and full Gebru et al. (2018) datasheet released under <strong>CC-BY 4.0</strong> with permanent Zenodo DOI.-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 
 <footer>
-  HALTBoard · NeurIPS 2026 Evaluations &amp; Datasets Track ·
-  <a href="#">Paper</a> · <a href="#">Code</a> · <a href="#">Dataset (CC-BY 4.0)</a>
-  <br style="margin-top:6px"/>
-  Website design inspired by <a href="https://hkust-nlp.github.io/agentboard/">AgentBoard (HKUST-NLP)</a>
+  HALTBoard · NeurIPS 2026 Evaluations &amp; Datasets Track
 </footer>
 
 <script>
@@ -2266,17 +2259,17 @@ obs('splitChart',()=>{
 // ── Extended nav items ────────────────────────────────────────────
 // update secnav to include new sections
 document.querySelector('.secnav-inner').innerHTML=`
-  <a class="secnav-link" href="#main-performance">Main Performance</a>
-  <a class="secnav-link" href="#dimensional">Dimensional Analysis</a>
-  <a class="secnav-link" href="#long-range">Long-range Interaction</a>
-  <a class="secnav-link" href="#difficulty">Difficulty Analysis</a>
-  <a class="secnav-link" href="#workflow">Workflow Families</a>
-  <a class="secnav-link" href="#deployment">Deployment Gates</a>
-  <a class="secnav-link" href="#casestudy">Case Study</a>
-  <a class="secnav-link" href="#calibration">Calibration</a>
-  <a class="secnav-link" href="#construction">Construction</a>
-  <a class="secnav-link" href="#about">About</a>
-  <a class="secnav-link" href="#bibtex">BibTeX</a>
+<!--  <a class="secnav-link" href="#main-performance">Main Performance</a>-->
+<!--  <a class="secnav-link" href="#dimensional">Dimensional Analysis</a>-->
+<!--  <a class="secnav-link" href="#long-range">Long-range Interaction</a>-->
+<!--  <a class="secnav-link" href="#difficulty">Difficulty Analysis</a>-->
+<!--  <a class="secnav-link" href="#workflow">Workflow Families</a>-->
+<!--  <a class="secnav-link" href="#deployment">Deployment Gates</a>-->
+<!--  <a class="secnav-link" href="#casestudy">Case Study</a>-->
+<!--  <a class="secnav-link" href="#calibration">Calibration</a>-->
+<!--  <a class="secnav-link" href="#construction">Construction</a>-->
+<!--  <a class="secnav-link" href="#about">About</a>-->
+<!--  <a class="secnav-link" href="#bibtex">BibTeX</a>-->
 `;
 // re-bind nav highlight
 document.querySelectorAll('.secnav-link').forEach(l=>{l.addEventListener('click',()=>{document.querySelectorAll('.secnav-link').forEach(x=>x.classList.remove('active'));l.classList.add('active');});});
@@ -2291,7 +2284,7 @@ window.addEventListener('scroll',()=>{
 },{passive:true});
 
 // ── BibTeX ────────────────────────────────────────────────────────
-function copyBib(){navigator.clipboard.writeText(document.getElementById('bibcode').textContent).then(()=>{const b=document.querySelector('.copy-btn');b.textContent='Copied!';setTimeout(()=>b.textContent='Copy',2000);});}
+// function copyBib(){navigator.clipboard.writeText(document.getElementById('bibcode').textContent).then(()=>{const b=document.querySelector('.copy-btn');b.textContent='Copied!';setTimeout(()=>b.textContent='Copy',2000);});}
 </script>
 </body>
 </html>
