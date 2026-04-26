@@ -378,14 +378,14 @@ code {
 
 .hero-stats-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 0;
-  width: fit-content;
+  width: 100%;
 }
 
 .hstat {
-  min-width: 300px;
-  padding: 24px;
+  min-width: 0;
+  padding: 18px 20px;
   text-align: left;
 }
 
@@ -425,7 +425,7 @@ code {
 
 .hero-stats-grid .hstat:nth-child(5),
 .hero-stats-grid .hstat:nth-child(6) {
-  border-bottom: none;
+  border-bottom: 1px solid var(--border);
 }
 
 .hero-stats-grid .hstat:nth-child(1),
@@ -1010,7 +1010,7 @@ footer a:hover {
 <!-- ══════════ TOP LOGO BAR (exact AgentBoard structure) ══════════ -->
 <div id="topbar">
   <div class="topbar-inner">
-  
+
     <nav class="topbar-nav">
       <a class="topbar-link active" href="#hero">
         <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7A1 1 0 003 11h1v6a1 1 0 001 1h4a1 1 0 001-1v-3h2v3a1 1 0 001 1h4a1 1 0 001-1v-6h1a1 1 0 00.707-1.707l-7-7z"/></svg>
@@ -1026,7 +1026,7 @@ footer a:hover {
       </a>
 	   <a class="topbar-link" href="#dimensional">
         <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"/><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"/></svg>
-        Triage Investigation
+        Benchmark Creation
       </a>
     </nav>
   </div>
@@ -1061,10 +1061,10 @@ footer a:hover {
       <div class="hero-stats-grid">
         <div class="hstat"><div class="hstat-val">1,248</div><div class="hstat-lbl">Benchmark instances</div><div class="hstat-sub">4 regimes · 5 families</div></div>
         <div class="hstat"><div class="hstat-val">16</div><div class="hstat-lbl">Systems evaluated</div><div class="hstat-sub">LLMs · agents · workflows</div></div>
-        <div class="hstat-divider"></div>
+
         <div class="hstat"><div class="hstat-val">82.4</div><div class="hstat-lbl">Human analyst DBA%</div><div class="hstat-sub">vs 71.0% best system</div></div>
         <div class="hstat"><div class="hstat-val">0</div><div class="hstat-lbl">Systems meet all gates</div><div class="hstat-sub">EC≥72% ∧ UOR≤10%</div></div>
-        <div class="hstat-divider"></div>
+
         <div class="hstat"><div class="hstat-val">κ=0.68</div><div class="hstat-lbl">Human label agreement</div><div class="hstat-sub">primary stopping label</div></div>
         <div class="hstat"><div class="hstat-val">11</div><div class="hstat-lbl">Expert annotators</div><div class="hstat-sub">mean 6.3 yrs SOC/IR</div></div>
       </div>
