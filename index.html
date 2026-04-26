@@ -1076,8 +1076,8 @@ footer a:hover {
 <div class="section" id="main-performance">
   <div class="container">
     <div class="section-head">
-      <div class="section-tag">§4 — Main Performance</div>
-      <h2>Main Performance</h2>
+      <div class="section-tag">Main Performance</div>
+      <h2>Overview</h2>
       <p class="section-lead"><strong>Benchmark composition:</strong> We categorize instances into five workflow families: Incident Triage, Forensic Reconstruction, Tool Orchestration, Remediation Planning, and Adversarial Resistance. Four decision regimes: ACT, INV, ESC, REF — 312 instances each.</p>
       <p class="section-lead"><strong>Evaluation metrics:</strong> We introduce three primary metrics. <strong>Decision-Boundary Accuracy (DBA)</strong> measures whether the agent chooses the correct next-step policy. <strong>Escalation Correctness (EC)</strong> specifically measures correct escalation decisions — the most deployment-critical metric. <strong>EscScore</strong> is the composite metric (Eq. 1). We additionally report Unsafe Overreach Rate (UOR ↓) and Over-Deferral Rate (ODR ↓).</p>
     </div>
@@ -1652,10 +1652,7 @@ footer a:hover {
 <!--</div>-->
 
 <footer>
-  HALTBoard · NeurIPS 2026 Evaluations &amp; Datasets Track ·
-  <a href="#">Paper</a> · <a href="#">Code</a> · <a href="#">Dataset (CC-BY 4.0)</a>
-  <br style="margin-top:6px"/>
-  Website design inspired by <a href="https://hkust-nlp.github.io/agentboard/">AgentBoard (HKUST-NLP)</a>
+  HALTBoard · NeurIPS 2026 Evaluations &amp; Datasets Track
 </footer>
 
 <script>
@@ -2262,17 +2259,17 @@ obs('splitChart',()=>{
 // ── Extended nav items ────────────────────────────────────────────
 // update secnav to include new sections
 document.querySelector('.secnav-inner').innerHTML=`
-  <a class="secnav-link" href="#main-performance">Main Performance</a>
-  <a class="secnav-link" href="#dimensional">Dimensional Analysis</a>
-  <a class="secnav-link" href="#long-range">Long-range Interaction</a>
-  <a class="secnav-link" href="#difficulty">Difficulty Analysis</a>
-  <a class="secnav-link" href="#workflow">Workflow Families</a>
-  <a class="secnav-link" href="#deployment">Deployment Gates</a>
-  <a class="secnav-link" href="#casestudy">Case Study</a>
-  <a class="secnav-link" href="#calibration">Calibration</a>
-  <a class="secnav-link" href="#construction">Construction</a>
-  <a class="secnav-link" href="#about">About</a>
-  <a class="secnav-link" href="#bibtex">BibTeX</a>
+<!--  <a class="secnav-link" href="#main-performance">Main Performance</a>-->
+<!--  <a class="secnav-link" href="#dimensional">Dimensional Analysis</a>-->
+<!--  <a class="secnav-link" href="#long-range">Long-range Interaction</a>-->
+<!--  <a class="secnav-link" href="#difficulty">Difficulty Analysis</a>-->
+<!--  <a class="secnav-link" href="#workflow">Workflow Families</a>-->
+<!--  <a class="secnav-link" href="#deployment">Deployment Gates</a>-->
+<!--  <a class="secnav-link" href="#casestudy">Case Study</a>-->
+<!--  <a class="secnav-link" href="#calibration">Calibration</a>-->
+<!--  <a class="secnav-link" href="#construction">Construction</a>-->
+<!--  <a class="secnav-link" href="#about">About</a>-->
+<!--  <a class="secnav-link" href="#bibtex">BibTeX</a>-->
 `;
 // re-bind nav highlight
 document.querySelectorAll('.secnav-link').forEach(l=>{l.addEventListener('click',()=>{document.querySelectorAll('.secnav-link').forEach(x=>x.classList.remove('active'));l.classList.add('active');});});
